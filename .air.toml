@@ -6,7 +6,7 @@ tmp_dir = "tmp" # airのログファイルが出力されるパス
 [build]
 # Just plain old shell command. You could use `make` as well. : アプリケーションをコンパイルするコマンドを記述
 # cmd = "go build -o ./tmp/main ."
-cmd = "go build -o tmp/main ./src/cmd/main.go"
+cmd = "go build -o tmp/main ./src/cmd/youtube-manager-app/main.go"
 # Binary file yields from `cmd`. : cmdでbuildしたbinaryのpathを指定
 bin = "tmp/main"
 # Customize binary, can setup environment variables when run your app.
