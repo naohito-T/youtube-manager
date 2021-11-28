@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/labstack/echo/v4"
-	"github.com/naohito-T/youtube-manager-api/src/web/api"
+	api "github.com/naohito-T/youtube-manager-api/src/web/app"
 )
 
 func Init(e *echo.Echo) {

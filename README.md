@@ -19,4 +19,9 @@ air
 
 ## directory構成
 
+GoのClean Arch
 [go-clean-arch](https://github.com/bxcodec/go-clean-arch)
+
+今回はこちらを採用
+[参考URL](https://qiita.com/sueken/items/87093e5941bfbc09bea8)
+[golang-standards](https://github.com/golang-standards/project-layout/blob/master/README_ja.md)
