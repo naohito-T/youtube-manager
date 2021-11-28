@@ -3,13 +3,17 @@ package main
 import (
 	// package
 	"github.com/labstack/echo/v4"
-	// my subPackage
+	"github.com/labstack/echo/v4/middleware"
+
+	// My subPackage
 	"github.com/naohito-T/youtube-manager-api/src/web/routes"
 )
 
-// 追記します。
 func main() {
 	e := echo.New()
+
+	// Middleware
+	e.Use(middleware.Logger())
 
 	// Routes
 	routes.Init(e)
