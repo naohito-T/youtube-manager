@@ -1,16 +1,16 @@
 # Config file for [Air](https://github.com/cosmtrek/air) in TOML format
 
-# Working directory
-# . or absolute path, please note that the directories following must be under root.
 root = "."
-tmp_dir = "tmp"
+tmp_dir = "tmp" # airのログファイルが出力されるパス
 
 [build]
-# Just plain old shell command. You could use `make` as well.
-cmd = "go build -o ./tmp/main ."
-# Binary file yields from `cmd`.
+# Just plain old shell command. You could use `make` as well. : アプリケーションをコンパイルするコマンドを記述
+# cmd = "go build -o ./tmp/main ."
+cmd = "go build -o tmp/main ./src/main.go"
+# Binary file yields from `cmd`. : cmdでbuildしたbinaryのpathを指定
 bin = "tmp/main"
 # Customize binary, can setup environment variables when run your app.
+# アプリケーションの起動方法を設定できる。起動時い環境変数や引数を渡すことができる。 ./tmp/main [引数]
 full_bin = "APP_ENV=dev APP_USER=air ./tmp/main"
 # Watch these filename extensions.
 include_ext = ["go", "tpl", "tmpl", "html"]
@@ -29,6 +29,7 @@ follow_symlink = true
 # This log file places in your tmp_dir.
 log = "air.log"
 # It's not necessary to trigger build each time file changes if it's too frequent.
+# コンパイルの実行タイミングを遅らせることができる。ファイルを頻繁に変更するのにコンパイル回数を減らすのに役立つ
 delay = 1000 # ms
 # Stop running old binary when build errors occur.
 stop_on_error = true
