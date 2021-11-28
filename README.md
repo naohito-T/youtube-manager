@@ -16,3 +16,7 @@ air
 ## Project Start
 
 `$ go run ./src/main.go`
+
+## directory構成
+
+[go-clean-arch](https://github.com/bxcodec/go-clean-arch)
