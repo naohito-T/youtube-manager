@@ -2,6 +2,7 @@ package api // サブパッケージの概念
 
 import (
 	"context"
+	"os"
 
 	"github.com/labstack/echo/v4"
 	"github.com/sirupsen/logrus"
@@ -12,7 +13,7 @@ import (
 
 func FetchMostPopularVideos() echo.HandlerFunc {
 	return func(c echo.Context) error {
-		key := "AIzaSyBiR_3VkJE9a6kmEwUjZX53-k_TvWs0Hps"
+		key := os.Getenv("YOUTUBE_API_KEY")
 
 		ctx := context.Background()
 

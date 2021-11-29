@@ -15,7 +15,15 @@ air
 
 ## Project Start
 
-`$ go run ./src/main.go`
+env set
+`$ (make env.decrypt.local KEY=m6MQ2NWj)`
+
+project start
+`$ make start.local`
+
+
+
+GO_ENV=local go run main.go
 
 ## directory構成
 

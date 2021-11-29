@@ -31,6 +31,7 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/googleapis/gax-go/v2 v2.1.1 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
+	github.com/joho/godotenv v1.4.0 // indirect
 	github.com/klauspost/compress v1.13.4 // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
