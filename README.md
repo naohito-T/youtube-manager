@@ -16,7 +16,7 @@ air
 ## Project Start
 
 env set
-`$ (make env.decrypt.local KEY=m6MQ2NWj)`
+`$ (make env.decrypt.local KEY=****************)`
 
 project start
 `$ make start.local`
